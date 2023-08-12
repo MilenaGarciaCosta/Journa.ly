@@ -1,0 +1,25 @@
+<br>
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link disabled" href="/">Seu diário</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="/cad">Escrever</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="/sobre">Sobre</a>
+  </li>
+</ul>
+<br><br>
+<h1 class="display-4 d-flex justify-content-center text-info">Journa.ly</h1>
+<br><br>
+
+<form action="/add"method="POST">
+    <h5 class="text-secondary">Título</h5>
+    <input type="text" class="form-control" name="titulo" placeholder="Digite aqui">
+    <br><br>
+    <h5 class="text-secondary">Conte sobre seu dia</h5>
+    <textarea class="form-control" aria-label="Com textarea" name="conteudo" placeholder="Digite aqui"></textarea>
+    <br><br>
+    <button type="submit" class="btn btn-info">Finalizar</button>
+</form>

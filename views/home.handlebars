@@ -1,0 +1,26 @@
+<br>
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="/">Seu diário</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="/cad">Escrever</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="/sobre">Sobre</a>
+  </li>
+</ul>
+<br><br>
+<h1 class="display-4 d-flex justify-content-center text-info">Journa.ly</h1>
+<br><br>
+
+{{#each posts}}
+<h3>{{titulo}}</h3>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{{conteudo}}</p>
+<p class="text-secondary">{{createdAt}}</p>
+<a href="/deletar/{{id}}"><button class="btn btn-danger">Deletar</button></a>
+<a href="/alterar/{{id}}"><button class="btn btn-info">Alterar</button></a>
+<hr>
+<br>
+{{/each}}
